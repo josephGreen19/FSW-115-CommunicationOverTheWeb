@@ -1,0 +1,77 @@
+{
+    "JSON's Deli menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "Nachos",
+                    "ingredients":["tortilla chips", "cheese", "peppers"],
+                    "description": "Spicey Nachos"
+                },
+                {
+                    "name": "Mozzarella sticks",
+                    "ingredients":["battered mozzarella cheese", "marinara sauce"],
+                    "description": "deeep fried mozzarella sticks"
+                }
+            ]
+        },
+        {
+            "cold sandwiches": [
+                {
+                    "name": "Classic Ham",
+                    "ingredients":["ham", "cheese, choice of subroll"],
+                    "description": "ham and cheese sub"
+                },
+                {
+                    "name": "Itailian sub",
+                    "ingredients":["salami", "capicolla", "ham", "provolone cheese", "choice of vegetables"],
+                    "description": "sub made with assorted meats, cheese, and vegetables"
+                }
+            ]
+        },
+        {
+            "hot sandwhiches": [
+                {
+                    "name": "Pizza sub",
+                    "ingredients":["marinara sauce", "peperoni", " mozzarella cheese", "french bread"],
+                    "description":"toasted french bread peperoni pizza"
+                },
+                {
+                    "name": "BLT sub",
+                    "ingredients":["bacon", "lettuce", "tomato", "choice of bread"],
+                    "description":"toasted blt with choice of bread"
+                }
+            ]
+
+        },
+        {
+            "desserts": [
+                {
+                    "name": "ice cream",
+                    "ingredients":["your choice flavor", "your choice of toppings"],
+                    "description": "ice cream with endless toppings, and choice of flavor"
+                },
+                {
+                    "name": "chocolate penutbutter cookie",
+                    "ingredients":["chocolate chips", "penutbutter chips"],
+                    "description": "soft cookie with chocolate and penutbutter chips"
+                }
+            ]
+        },
+        {
+            "drinks": [
+                {
+                    "name": "perfect lemonade",
+                    "ingredients":["fresh lemon juice", "sugar"],
+                    "description": "freshly made lemonade"
+                },
+                {
+                    "name": "sweet tea",
+                    "ingredients":["lipton black tea bags", "sugar", "ice"],
+                    "description": "fresh brewed sweet tea"
+                }
+            ]
+        }
+
+     ]
+ }
+    
