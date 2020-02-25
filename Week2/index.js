@@ -1,7 +1,9 @@
 // Create Div
 var newD = document.createElement("div");
+document.body.append(newD)
 // Create P
 var newP = document.createElement("p");
+document.body.append(newP)
 // API Data
 var starWars =  {
 	"name": "Luke Skywalker",
@@ -35,9 +37,13 @@ var starWars =  {
 	"edited": "2014-12-20T21:17:56.891000Z",
 	"url": "https://swapi.co/api/people/1/"
 }
+//make starWars into a string
+var json = JSON.stringify(starWars)
+console.log(json)
+
 // Put starWars variable inside newP, make starWars the content that is shown
-newP.appendChild(starWars);
-newP.textContent = starWars
+newP.append(json);
+newP.textContent = json
 
 // put newP inside newD
-newD.appendChild("newP");
+newD.append(newP);
