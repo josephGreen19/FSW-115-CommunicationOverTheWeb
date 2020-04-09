@@ -24,7 +24,7 @@
                 {
                     "name": "Itailian sub",
                     "ingredients":["salami", "capicolla", "ham", "provolone cheese", "choice of vegetables"],
-                    "description": "sub made with assorted meats, cheese, and vegetables"
+                    "description": "made with all fresh ingrediants"
                 }
             ]
         },
@@ -38,7 +38,7 @@
                 {
                     "name": "BLT sub",
                     "ingredients":["bacon", "lettuce", "tomato", "choice of bread"],
-                    "description":"toasted blt with choice of bread"
+                    "description":"toasted BLT with choice of bread"
                 }
             ]
 
