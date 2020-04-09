@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest()
 // method
-xhr.open("GET", "https://swapi.co/api/people/1/", true )
+xhr.open("GET", "https://api.vschool.io/josephgreen/todo/", true )
 xhr.send()
 
 xhr.onreadystatechange = function(){
@@ -13,9 +13,9 @@ xhr.onreadystatechange = function(){
 function showData(arr){
 	for( let i = 0; i < arr.length; i++){
 	const h1 = document.createElement('h1')
-	h1.textContent = arr[i].name
+	h1.textContent = arr[i]
 	document.body.appendChild(h1)
 }
 }
 
-//https://api.vschool.io/pokemon
+
