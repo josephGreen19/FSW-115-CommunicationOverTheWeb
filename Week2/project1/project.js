@@ -1,58 +1,85 @@
-const starWars =  {
-	"name": "Luke Skywalker",
-	"height": "172",
-	"mass": "77",
-	"hair_color": "blond",
-	"skin_color": "fair",
-	"eye_color": "blue",
-	"birth_year": "19BBY",
-	"gender": "male",
-	"homeworld": "https://swapi.co/api/planets/1/",
-	"films": [
-		"https://swapi.co/api/films/2/",
-		"https://swapi.co/api/films/6/",
-		"https://swapi.co/api/films/3/",
-		"https://swapi.co/api/films/1/",
-		"https://swapi.co/api/films/7/"
-	],
-	"species": [
-		"https://swapi.co/api/species/1/"
-	],
-	"vehicles": [
-		"https://swapi.co/api/vehicles/14/",
-		"https://swapi.co/api/vehicles/30/"
-	],
-	"starships": [
-		"https://swapi.co/api/starships/12/",
-		"https://swapi.co/api/starships/22/"
-	],
-	"created": "2014-12-09T13:50:51.644000Z",
-	"edited": "2014-12-20T21:17:56.891000Z",
-	"url": "https://swapi.co/api/people/1/"
+var rickMorty = {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+        "name": "Earth (C-137)",
+        "url": "https://rickandmortyapi.com/api/location/1"
+    },
+    "location": {
+        "name": "Earth (Replacement Dimension)",
+        "url": "https://rickandmortyapi.com/api/location/20"
+    },
+    "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+    "episode": [
+        "https://rickandmortyapi.com/api/episode/1",
+        "https://rickandmortyapi.com/api/episode/2",
+        "https://rickandmortyapi.com/api/episode/3",
+        "https://rickandmortyapi.com/api/episode/4",
+        "https://rickandmortyapi.com/api/episode/5",
+        "https://rickandmortyapi.com/api/episode/6",
+        "https://rickandmortyapi.com/api/episode/7",
+        "https://rickandmortyapi.com/api/episode/8",
+        "https://rickandmortyapi.com/api/episode/9",
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/11",
+        "https://rickandmortyapi.com/api/episode/12",
+        "https://rickandmortyapi.com/api/episode/13",
+        "https://rickandmortyapi.com/api/episode/14",
+        "https://rickandmortyapi.com/api/episode/15",
+        "https://rickandmortyapi.com/api/episode/16",
+        "https://rickandmortyapi.com/api/episode/17",
+        "https://rickandmortyapi.com/api/episode/18",
+        "https://rickandmortyapi.com/api/episode/19",
+        "https://rickandmortyapi.com/api/episode/20",
+        "https://rickandmortyapi.com/api/episode/21",
+        "https://rickandmortyapi.com/api/episode/22",
+        "https://rickandmortyapi.com/api/episode/23",
+        "https://rickandmortyapi.com/api/episode/24",
+        "https://rickandmortyapi.com/api/episode/25",
+        "https://rickandmortyapi.com/api/episode/26",
+        "https://rickandmortyapi.com/api/episode/27",
+        "https://rickandmortyapi.com/api/episode/28",
+        "https://rickandmortyapi.com/api/episode/29",
+        "https://rickandmortyapi.com/api/episode/30",
+        "https://rickandmortyapi.com/api/episode/31"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/1",
+    "created": "2017-11-04T18:48:46.250Z"
 }
-var json = JSON.stringify(starWars)
+
+
+
+
+var json = JSON.stringify(rickMorty)
 var myList = document.createElement("ul")
 
 var newli1 = document.createElement("li")
-newli1.textContent = ("Name: " + starWars.name)
+newli1.textContent = ("Name: " + rickMorty.name)
 var newLi2 = document.createElement('li')
-newLi2.textContent = ("Height: ") + starWars.height
+newLi2.textContent = ("Status: ") + rickMorty.status
 var newLi3 = document.createElement("li")
-newLi3.textContent = ("Mass: ") + starWars.mass
+newLi3.textContent = ("Species: ") + rickMorty.species
 var newLi4 = document.createElement("li")
-newLi4.textContent = ("Hair Color: ") + starWars.hair_color
+newLi4.textContent = ("Gender: ") + rickMorty.gender
 var newLi5 = document.createElement("li")
-newLi5.textContent = ("Skin Color: ") + starWars.skin_color
+newLi5.textContent = ("Origin Name: ") + rickMorty.origin.name
 var newLi6 = document.createElement("li")
-newLi6.textContent = ("Eye Color: ") + starWars.eye_color
+newLi6.textContent = ("Origin URL: ") + rickMorty.origin.url
 var newLi7 = document.createElement("li")
-newLi7.textContent = ("Birth Year: ") + starWars.birth_year
+newLi7.textContent = ("Location Name: ") + rickMorty.location.name
 var newLi8 = document.createElement("li")
-newLi8.textContent =("Gender: ") + starWars.gender
+newLi8.textContent =("Location URL: ") + rickMorty.location.url
 var newLi9 = document.createElement("li")
-newLi9.innerHTML = ("HomeWorld: ") + starWars.homeworld
+newLi9.innerHTML = ("Created: ") + rickMorty.created
 // Add li to the ul
 document.querySelector("myList")
 myList.append(newli1,newLi2, newLi3, newLi4, newLi5, newLi6, newLi7, newLi8, newLi9)
 
 document.body.append(myList)
+
+document.querySelector("ul").style.fontSize = "25px"
+document.querySelector("ul").style.border = "solid black 10px"
