@@ -17,4 +17,3 @@ function showData(arr){
         h1.textContent = arr[i].name
         document.body.append(h1)
     }
-}
