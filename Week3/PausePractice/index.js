@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest()
 // method
-xhr.open("GET", "https://swapi.co/api/people/1/", true )
+xhr.open("GET", "https://swapi.dev/api/people/", true )
 xhr.send()
 
 xhr.onreadystatechange = function(){
@@ -18,4 +18,3 @@ function showData(arr){
 }
 }
 
-//https://api.vschool.io/pokemon
